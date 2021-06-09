@@ -1,4 +1,4 @@
-package com.amazon.ata.unittesting.beginningunittesting;
+package com.amazon.ata.unittesting;
 
 /**
  * A utility providing math operations (for now, just adding integers).

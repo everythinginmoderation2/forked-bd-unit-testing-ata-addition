@@ -1,6 +1,5 @@
-package com.amazon.ata.unittesting.beginningunittesting;
+package com.amazon.ata.unittesting;
 
-import com.amazon.ata.unittesting.beginningunittesting.AtaAddition;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

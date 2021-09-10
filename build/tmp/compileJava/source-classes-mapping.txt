@@ -1,2 +1,2 @@
-com/amazon/ata/unittesting/beginningunittesting/AtaAddition.java
- com.amazon.ata.unittesting.beginningunittesting.AtaAddition
+com/amazon/ata/unittesting/AtaAddition.java
+ com.amazon.ata.unittesting.AtaAddition

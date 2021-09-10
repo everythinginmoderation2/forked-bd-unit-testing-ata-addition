@@ -161,12 +161,12 @@ import org.junit.jupiter.api.Test;
 To run an individual unit test, click on the arrow in the margin next to the
 method declaration and select “Run 'add_singleInteger_returnsTheInteger()'”:
 
-![Run Triangle](src/com/amazon/ata/unittesting/beginningunittesting/resources/RunTriangle.png)
+![Run Triangle](src/com/amazon/ata/unittesting/resources/RunTriangle.png)
 
 In the console at the bottom of the IntelliJ window, you should see that the
 test passed:
 
-![Test Results](src/com/amazon/ata/unittesting/beginningunittesting/resources/TestResults.png)
+![Test Results](src/com/amazon/ata/unittesting/resources/TestResults.png)
 
 Now, do the same with the `add_twoIntegers_returnsTheirSum()` test.
 
@@ -230,7 +230,7 @@ way we can clearly state the intended behavior of our code (remember above:
 Run the `add_nullArray_returnsZero()` test and verify that you get something like the results
 below:
 
-![Null Array Test Results](src/com/amazon/ata/unittesting/beginningunittesting/resources/NullArrayTestResults.png)
+![Null Array Test Results](src/com/amazon/ata/unittesting/resources/NullArrayTestResults.png)
 
 Note that you can click on the
 “AtaAddition.java:XX” link to jump to the place in the code where the exception
@@ -316,18 +316,18 @@ assertion line by clicking in the margin next to that line, and a red circle
 should appear. This means that when you run the test in debug mode, IntelliJ
 will stop on that line and let you inspect.
 
-![Breakpoint](src/com/amazon/ata/unittesting/beginningunittesting/resources/Breakpoint.png))
+![Breakpoint](src/com/amazon/ata/unittesting/resources/Breakpoint.png))
 
 Now run the test in debug mode by clicking the arrow next to the test
 declaration and click “Debug 'add_sumOutOfBounds_resultsInValueLargerThanMAX_VALUE()':
 
-![Debug Icon](src/com/amazon/ata/unittesting/beginningunittesting/resources/DebugIcon.png)
+![Debug Icon](src/com/amazon/ata/unittesting/resources/DebugIcon.png)
 
 IntelliJ's debugger helpfully displays the current value of all of the local
 variables inline. Notice that result is negative (very negative in fact!).
 Oops, it wrapped around!:
 
-![Integer Wrap](src/com/amazon/ata/unittesting/beginningunittesting/resources/IntegerWrap.png)
+![Integer Wrap](src/com/amazon/ata/unittesting/resources/IntegerWrap.png)
 
 At this point, we can decide what to do, but we can't leave it as is. We tried
 to specify our class behavior in this scenario a la Test-Driven Development,
@@ -340,7 +340,7 @@ Before re-running any tests, to stop the debugger, hit the red square icon on
 the far left on the lower pane as below (or in the upper right of the IntelliJ
 window if you prefer):
 
-![Stop Debugging](src/com/amazon/ata/unittesting/beginningunittesting/resources/StopDebugging.png)
+![Stop Debugging](src/com/amazon/ata/unittesting/resources/StopDebugging.png)
 
 #### Part 2: Let's revise the behavior of our method under test
 
@@ -435,7 +435,7 @@ Go back to one of the tests, and change the `42` in the first test's
 `assertEquals()` call to `41`, then re-run all of the tests. You should see
 something like the following:
 
-![Run All Results](src/com/amazon/ata/unittesting/beginningunittesting/resources/RunAllResults.png)
+![Run All Results](src/com/amazon/ata/unittesting/resources/RunAllResults.png)
 
 Notes:
 
@@ -444,10 +444,11 @@ Notes:
 
 Now undo that `42` → `41` change, rerun all the tests and verify that they pass!
 
-Run `rde wflow run unittesting-prework-ataaddition` to verify that the tests pass from the
+Run `./gradlew -q clean :test` to verify that the tests pass from the
 terminal, too.
 
 Congratulations, you're a unit tester!
 
-Commit your changes and push them to GitFarm. Find the commit URL and answer
-the Canvas quiz.
+Commit your changes and push them to your forked repo. 
+
+Find the commit URL and answer the Canvas quiz.
